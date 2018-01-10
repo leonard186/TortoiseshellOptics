@@ -237,6 +237,7 @@ header {
 
     .about_item h2 {
       width: auto;
+      text-align: center;
     }
 
     .about_item p {
