@@ -19,7 +19,7 @@ body {
 
 header {
   background-image: url("../images/glasses-bg.png");
-  height: 30rem;
+  height: 31rem;
   background-size: cover;
   background-position: center;
 }
@@ -103,6 +103,7 @@ nav span {
 
 .items img {
   width: 5rem;
+  margin-bottom: 1rem;
 
 }
 
@@ -144,4 +145,127 @@ footer {
 footer img {
   height: 1.5rem;
   margin: 4rem 1rem 4rem 4rem;
+}
+
+/* Tablet view Landscape*/
+
+@media only screen and (max-width: 1024px) {
+
+.motto h1{
+  padding: 0.75rem 4rem;
+  font-size: 1.33rem;
+  }
+
+.motto {
+  margin: 5rem 2rem 0 0;
+  }
+
+.navigation_bar {
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+}
+
+header {
+    height: 22rem;
+  }
+
+}
+
+/* Tablet view Portrait */
+
+@media only screen and (max-width: 700px) {
+
+  header {
+      height: 18rem;
+    }
+
+    .big_screen {
+      display: none;
+    }
+
+    .small_screen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+/* Mobile view */
+
+@media only screen and (max-width: 555px) {
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .motto h1{
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    }
+
+  .motto {
+      width: 100%;
+      margin: 9rem 0;
+    }
+
+    .featured {
+      flex-direction: column;
+      align-items: center;
+      margin: 3rem auto;
+    }
+
+    .items {
+      height: auto;
+      margin: 0.77rem;
+    }
+
+    .about {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .about_item {
+      width: auto;
+      margin: 0;
+    }
+
+    .about_item h2 {
+      width: auto;
+    }
+
+    .about_item p {
+      font-family: Helvetica;
+      font-size: 0.77rem;
+      padding: 1rem 0.5rem 4rem 0.5rem;
+    }
+
+    footer {
+      width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 415px) {
+  .logo span {
+    display: none;
+  }
+
+  footer p{
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer img {
+    margin: 4rem 0;
+  }
+
 }
